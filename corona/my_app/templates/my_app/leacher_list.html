@@ -1,0 +1,19 @@
+{% extends 'my_app/base.html' %}
+
+{% block content %}
+    <h1 style="margin-top: 60px;" id="heading_needy">Needy families near you :</h1>
+    <p></p>
+    <p style="margin-top: 50px;"></p>
+    <hr></hr>
+    {% for member in leacher_list %}
+        <h4>Name : {{ member.name }}</h4>
+        <h5>Address : {{ member.address }}</h5>
+        <h5>Location : {{ member.location }}</h5>
+        <a class="btn btn-primary" href="donate" role="button">Donate</a>
+        <hr></hr>
+        <p></p>
+        <p></p>
+    {% endfor %}
+{% endblock %}
+
+

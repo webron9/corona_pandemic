@@ -1,0 +1,45 @@
+{% extends 'my_app/base.html' %}
+
+{% block content %}
+    <div class="container">
+        <div class="split left shad">
+            <h2 class="corona_title">Covid-19 Coronavirus Pandemic</h2>
+            <p class="updated_date">Last updated: {{query_results.new_date}} </p>
+            <h3>Coronavirus Cases: </h3>
+            <p class="tot">{{ query_results.total_cases }}</p>
+            <p></p>
+            <h3>Deaths: </h3>
+            <p class="tot">{{ query_results.deaths }}</p>
+            <p></p>
+            <h3>Recovered: </h3>
+            <p class="tot">{{ query_results.recovered_cases }}</p>
+            <p></p>
+            <a id="country" href="https://www.worldometers.info/coronavirus/#countries">View by Country</a>
+        </div>
+        <div class="split right shad">
+            <h1 class="slogan">Draw a line on <b>Hunger</b></h1>
+            <hr style="background-color: rgb(195, 228, 119); height: 2px;">
+            <p class="ration">Peer to Peer Ration Delivery</p>
+            {% if user.is_authenticated %}
+            <button type="button" class="btn btn-secondary btn-lg donate_but"><a href="{% url 'leacher_list'%}"><strong>Donate</strong></a></button>
+            {% else %}
+            <button type="button" class="btn btn-secondary btn-lg donate_but"><a href="{% url 'login' %}"><strong>Donate</strong></a></button>
+            {% endif %}
+            <p class="people">from the people, to the people!</p>
+        </div>
+        <div class="news_title">
+            <h1 style="font-family: 'Volkhov', serif;font-size: 60px;margin-left: 300px;">Latest News</h1>
+            <p style="font-family:'Volkhov', serif;font-size: 40px;margin-left: 300px;color: rgb(104, 92, 92);">related to Covid-19 Pandemic</p>
+        </div>
+        <div class='news_content'>
+            <ul>
+                {% for item in news_list %}
+                <li><a  class="item" href="{{ item.link }}">{{ item.headline }}</a></li>
+                <p></p>
+                <hr style="height: 5px;"></hr>
+                {%  endfor %}
+            </ul>
+        </div>
+    </div>
+    
+{% endblock %}

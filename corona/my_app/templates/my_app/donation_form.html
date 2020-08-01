@@ -1,0 +1,14 @@
+{% extends 'my_app/base.html' %}
+
+{% block content %}
+  <div class="jumbotron">
+
+    <form  method="POST" action="{% url 'donate' %}">
+    {% csrf_token %}
+        {{form.as_p}}
+
+        <input type="submit" class='btn btn-primary' value="Donate" />
+        <input type="hidden" name="next" value="{{ next }}" />
+    </form>
+  </div>
+{% endblock %}

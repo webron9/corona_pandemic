@@ -1,0 +1,134 @@
+h3{
+    padding-left: 100px;
+    color: rgb(87, 87, 87);
+    font-size:xx-large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.shad {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+
+.bigbrand{
+  font-weight: 900;
+}
+
+.split {
+    height: 510px;
+    min-width: 49%;
+    position: absolute;
+    z-index: 1;
+    top: 100px;
+    overflow-x: hidden;
+    padding-top: 10 px;
+  }
+  
+  .left {
+    left: 0;
+    background-color: rgb(170, 212, 71);
+  }
+  
+  .right {
+    right: 0;
+    background-color: rgb(53, 155, 53);  /*rgb(37, 128, 37)*/
+  }
+  body{
+      background-color:rgb(218, 213, 213);
+  }
+  
+.corona_title{
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 700;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: teal;
+    border-style: solid;
+    border-color: teal;
+}
+.updated_date{
+    color: grey;
+    text-align: center;
+    font-size: large;
+}
+
+.tot{
+    padding-left: 100px;
+    font-weight: 900;
+    font-size: 1cm;
+    color: rgb(118, 138, 116);
+}
+
+#country{
+    padding-left: 100px;
+    color: rgb(93, 100, 100);
+    font-size: x-large;
+    text-decoration: underline;
+}
+
+.slogan{
+  padding-top: 40px;
+  padding-bottom: 10px;
+  text-align: center;
+  font-family: 'Satisfy', cursive;
+  font-size: 1.5cm;
+  color: rgb(170, 212, 71);
+  border: hidden;
+  }
+
+b{
+  text-decoration: line-through;
+  color: rgb(171, 236, 18);
+}
+
+.ration{
+  padding-top: 30px;
+  text-align: center;
+  font-size: 1cm;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color:rgb(195, 228, 119);
+}
+
+.people{
+  margin-top: 50px;
+  margin-left: 30px;
+  font-size: 60px;
+  font-family: 'Great Vibes', cursive;
+  color: rgb(195, 228, 119);
+}
+
+.donate_but{
+  margin-top: 10px; 
+  margin-left: 200px;
+  background-color: rgb(195, 228, 119);
+  color: teal;
+}
+
+strong{
+  font-size: 1cm;
+  color:rgb(75, 128, 128);
+}
+
+.news_title{
+  position: absolute;
+  margin-top: 700px;
+  text-align: center;
+}
+
+.news_content{
+  margin-top: 850px;
+  position: absolute;
+  background-color: rgb(121, 173, 173);    /*rgb(121, 173, 173)*/
+  padding-top: 40px;
+}
+
+.item{
+  color:black;
+  font-size: 30px;
+  font-weight: 700;
+  font-family: 'Abel', sans-serif;
+}
+
+#heading_needy{
+  text-decoration: solid;
+}
